@@ -1,0 +1,20 @@
+Presenter
+  #name
+  #dates
+
+PresentationGroup
+  #presenters
+
+PresentationDate
+  #date
+  #presentation_group
+
+ presentation_date = PresentationDate.new("Jan 26")
+ Presenter.new("Steven Nunez", presentation_date)
+ 	#initialize
+ 	  presentation_date.group << self
+ 	  @date = presentation_date
+
+
+student = Presenter.find_by_name("Steven Nunez")
+student.presents_on
