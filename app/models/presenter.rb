@@ -23,6 +23,10 @@ class Presenter
 		self.find_by_name(name) || self.new(name)
 	end
 
+	def self.all
+		@@all_presenters
+	end
+
 	def self.reset_all
 		@@all_presenters.clear
 	end

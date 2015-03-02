@@ -41,7 +41,6 @@ class PresentationDate
 		@@presentation_dates.find(-> { NullDate.new }) do |presentation_date|
 			presentation_date.date == Date.parse(date)
 		end.group
-
 	end
 end
 
